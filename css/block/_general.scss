@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    // scroll-behavior: [auto | smooth];
+    box-sizing: border-box;
+}
+
+body {
+    color: $c0;
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+a {
+    // color: $c1;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+ol,
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    list-style-position: inside;
+}
+
+// /=================================Generic Elements 
+.hs1,
+.hs2,
+.hs3,
+.hs4,
+.hs5,
+.hs6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    //   font-family: $ct;
+}
+
+.hs1,
+%hs1,
+h1 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.hs2,
+%hs2,
+h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 110%;
+
+    strong {
+        font-weight: 600;
+    }
+
+    @media (max-width: 1200px) {
+        font-size: 24px;
+    }
+
+    @media(max-width:767px) {
+        letter-spacing: 0em;
+    }
+}
+
+.hs3,
+h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+}
+
+.hs4,
+h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.hs5,
+h5 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+// Buttons Styling
+.btn {
+    display: inline-block;
+    font-family: $f1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 16px 32px;
+    background: none;
+    color: $cf;
+    border: 1px solid $cf;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+
+    &:focus,
+    &:hover {
+        color: $c0;
+        background: $cf;
+    }
+}
+
+.cnt-lg {
+    max-width: 1640px;
+    margin: auto;
+}
+.cnt{
+    max-width:1304px;
+    margin: auto;
+    @media(max-width:991px){
+        max-width: 92%;
+        margin: auto;
+    }
+}
+.img{
+    img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+}

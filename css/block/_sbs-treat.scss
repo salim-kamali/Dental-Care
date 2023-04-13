@@ -1,0 +1,33 @@
+.sbs_treat {
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    color: $cf;
+    background-color: $c0;
+
+    h2{
+        margin-bottom: 16px;
+        strong{
+            display: block;
+        }
+    }
+    .txt{
+        max-width: 450px;
+        margin: auto;
+    }
+    @media(max-width:991px){
+        margin-top: 80px;
+        margin-bottom: 80px;
+        .txt{
+            max-width: 100%;
+            padding-top: 32px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 60px;
+        }
+    }
+    @media(max-width:767px){
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+}
