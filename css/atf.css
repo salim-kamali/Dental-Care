@@ -239,7 +239,7 @@ header .navbar-nav .nav-link.active {
 }
 @media (max-width: 1440px) {
   .home_hero {
-    height: 520px;
+    height: 565px;
   }
   .home_hero .img video {
     min-height: 520px;
