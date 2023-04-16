@@ -1,6 +1,10 @@
 .home_hero {
     position: relative;
     height: 820px;
+    background-image: url(../img/home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
     .img {
         position: absolute;
