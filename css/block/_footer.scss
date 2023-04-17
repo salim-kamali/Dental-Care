@@ -16,7 +16,9 @@
     h2 {
         font-size: 26px;
         font-weight: 600;
-        span{
+        margin-bottom: 0;
+
+        span {
             font-size: 32px;
             color: $c1;
         }
@@ -29,7 +31,7 @@
     }
 
     .footer-top {
-        border-bottom: 1px solid $c0;
+        border-bottom: 1px solid $cf;
         padding-bottom: 22px;
         margin-bottom: 24px;
 
@@ -44,8 +46,9 @@
                 a {
                     font-size: 26px;
                     color: $cf;
-                    &:hover{
-                        color:$c1;
+
+                    &:hover {
+                        color: $c1;
                     }
                 }
             }
@@ -67,7 +70,7 @@
                     right: -17px;
                     width: 1px;
                     height: 20px;
-                    background-color: $c0;
+                    background-color: $cf;
                 }
 
                 &:last-child {
@@ -80,5 +83,25 @@
             }
         }
 
+    }
+
+    @media(max-width:767px) {
+        .footer-bottom {
+            .flex{
+                display: block;
+            }
+            ul {
+                flex-direction: column;
+                li {
+                    margin-right: 0;
+                    margin-bottom: 16px;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+        }
     }
 }
