@@ -32,4 +32,37 @@ $(document).ready(function () {
             }]
     });
 
+
+    if ($(window).width() < 990) {
+
+        $(".cta-slider").slick({
+            slidesToShow:2,
+            slidesToScroll:1,
+            dots:false,
+            arrows:false,
+            infinite:true,
+            autoplay:true,
+            responsive:[{
+                breakpoint:767,
+                settings:{
+                    slidesToShow:1.00,
+                }
+            }]
+        });
+        $(".meet-the-team .row").slick({
+            slidesToShow:2,
+            slidesToScroll:1,
+            dots:false,
+            arrows:false,
+            infinite:true,
+            autoplay:true,
+            responsive:[{
+                breakpoint:767,
+                settings:{
+                    slidesToShow:1.00,
+                }
+            }]
+        });
+    }
+
 });

@@ -1,0 +1,38 @@
+.inset_sbs{
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: $cf;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        transform: rotate(180deg);
+        background: linear-gradient(90deg, rgba(5, 220, 241, 0) 14.75%, #2AD6C3 42.1%);
+    }
+    .txt{
+        position: relative;
+    }
+    .btn{
+        margin-top: 32px;
+    }
+
+    @media(max-width:991px){
+        padding-top: 0;
+        padding-bottom: 80px;
+        background-color: $c1;
+        background-image: none !important;
+        &::before{
+            display: none;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

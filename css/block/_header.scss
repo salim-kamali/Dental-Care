@@ -1,14 +1,22 @@
 header{
     position: relative;
-    color: #fff;
-    background-color: #000;
+    color: $ct;
+    background-color: $cf;
     nav{
         padding: 15px 0 !important;
     }
     .navbar-brand{
-        color: #fff;
+        color: $ct;
+        font-size: 26px;
         text-transform: capitalize;
         font-weight: 600;
+        span{
+            font-size: 32px;
+            color: $c1;
+        }
+        &:hover{
+            color: $cf;
+        }
     }
     .navbar-nav{
         .nav-item{
@@ -18,12 +26,12 @@ header{
             }
         }
         .nav-link{
-            color: #fff;
+            color: $ct;
             font-size: 16px;
             padding: 0;
             text-transform: uppercase;
             &.active{
-                color: #fff;
+                color: $c1;
             }
         }
     }

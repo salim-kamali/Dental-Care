@@ -1,5 +1,10 @@
-footer {
+.footer_sec {
     position: relative;
+    color: $cf;
+    background-color: $c2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 
     .flex {
         display: flex;
@@ -9,7 +14,12 @@ footer {
     }
 
     h2 {
+        font-size: 26px;
         font-weight: 600;
+        span{
+            font-size: 32px;
+            color: $c1;
+        }
     }
 
     ul {
@@ -20,7 +30,7 @@ footer {
 
     .footer-top {
         border-bottom: 1px solid $c0;
-        padding-bottom: 28px;
+        padding-bottom: 22px;
         margin-bottom: 24px;
 
         ul {
@@ -33,7 +43,10 @@ footer {
 
                 a {
                     font-size: 26px;
-                    color: $c0;
+                    color: $cf;
+                    &:hover{
+                        color:$c1;
+                    }
                 }
             }
         }

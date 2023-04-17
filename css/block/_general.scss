@@ -43,6 +43,33 @@ li {
 }
 
 // /=================================Generic Elements 
+
+.title_sec{
+    h2{
+        position: relative;
+        padding-bottom: 14px;
+        font-weight: 500;
+        &::before{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            height: 4px;
+            width: 80px;
+            background-color: #eaeaea;
+        }
+        &::after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            height: 4px;
+            width: 40px;
+            background-color: $c1;
+        }
+    }
+}
+
 .hs1,
 .hs2,
 .hs3,
@@ -77,7 +104,7 @@ h1 {
 %hs2,
 h2 {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 110%;
 
     strong {
@@ -136,7 +163,8 @@ h6 {
     letter-spacing: 0.04em;
     padding: 16px 32px;
     background: none;
-    color: $cf;
+    color: $c0;
+    background-color: $cf;
     border: 1px solid $cf;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
@@ -144,8 +172,48 @@ h6 {
 
     &:focus,
     &:hover {
-        color: $c0;
-        background: $cf;
+        color: $cf;
+        border: 1px solid $cf;
+        background-color: unset;
+    }
+}
+
+.btn-outline {
+    color: $cf;
+    background-color: unset;
+    border: 1px solid $cf;
+
+    &:focus,
+    &:hover {
+        color: $cf;
+        border: 1px solid $cf;
+        background: unset;
+    }
+}
+
+.btn-blue {
+    color: $cf;
+    background-color: $c1;
+    border: 1px solid $c1;
+
+    &:focus,
+    &:hover {
+        color: $c1;
+        border: 1px solid $c1;
+        background-color: unset;
+    }
+}
+
+.btn-outline-blue {
+    color: $c1;
+    background-color: unset;
+    border: 1px solid $c1;
+
+    &:focus,
+    &:hover {
+        color: $cf;
+        border: 1px solid $c1;
+        background-color: $c1;
     }
 }
 
@@ -153,16 +221,19 @@ h6 {
     max-width: 1640px;
     margin: auto;
 }
-.cnt{
-    max-width:1304px;
+
+.cnt {
+    max-width: 1304px;
     margin: auto;
-    @media(max-width:991px){
+
+    @media(max-width:991px) {
         max-width: 92%;
         margin: auto;
     }
 }
-.img{
-    img{
+
+.img {
+    img {
         width: auto;
         height: auto;
         max-width: 100%;

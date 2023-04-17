@@ -1,5 +1,6 @@
 .meet-the-team{
     position: relative;
+    margin-top: 120px;
     margin-bottom: 120px;
     .title_sec{
         margin-bottom: 32px;
@@ -13,7 +14,16 @@
         margin-top: 16px;
     }
     h3{
+        color: $c1;
         font-weight: 18px;
         margin-bottom: 8px;
+    }
+    @media(max-width:991px){
+        img{
+            width: 100%;
+        }
+        .slick-slide{
+            margin: 0 20px;
+        }
     }
 }

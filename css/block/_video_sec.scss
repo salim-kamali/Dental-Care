@@ -15,7 +15,9 @@
             z-index: 1;
             text-align: center;
 
-            img {
+            // img {}
+
+            svg {
                 margin-bottom: 8px;
             }
 
@@ -24,6 +26,16 @@
                 font-size: 16px;
                 line-height: 150%;
                 color: #F2f2f2;
+            }
+            &:hover{
+                svg{
+                    path{
+                        fill: $c1;
+                    }
+                }
+                span{
+                    color: $c1;
+                }
             }
         }
 
